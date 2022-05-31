@@ -14,13 +14,14 @@ import ProtectedRoute from "./ProtectedRoute";
 import { useEffect, useState } from "react";
 
 function App() {
+  const url = "https://gentle-escarpment-01903.herokuapp.com/auth";
   // Check If User is Logged In
   const [auth, setAuth] = useState(false);
   const [auth1, setAuth1] = useState(true);
 
   const userIsLoggedIn = async () => {
     try {
-      const res = await fetch("/auth", {
+      const res = await fetch(url, {
         method: "GET",
         headers: {
           Accept: "application/json",

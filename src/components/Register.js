@@ -23,11 +23,12 @@ const Register = () => {
     //object deStructuring
     //Store object data into variables
     const { username, email, password } = user;
+    const url = "https://gentle-escarpment-01903.herokuapp.com/register";
     try {
       //It is submitted on port 3000 by default
       //Which is Front End but we need to Submit it on Back End Which is on
       //Port 3001,  proxy is add in package.josn proxy.
-      const res = await fetch("/register", {
+      const res = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +89,6 @@ const Register = () => {
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
                   name="email"
                   value={user.email}
                   onChange={handleInput}

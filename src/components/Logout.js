@@ -3,10 +3,10 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Logout = () => {
   const history = useHistory();
-
+const url = "https://gentle-escarpment-01903.herokuapp.com/logout";
   const logoutHandler = async () => {
     try {
-      const res = await fetch("/logout", {
+      const res = await fetch(url, {
         method: "GET",
         headers: {
           Accept: "application/json",
