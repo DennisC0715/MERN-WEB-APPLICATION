@@ -29,6 +29,7 @@ const Login = () => {
         alert("login failed");
       } else {
         alert("login successfully");
+        window.location.reload();
         history.push("/dashboard");
       }
     } catch (error) {
@@ -38,7 +39,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="container shadow my-5 ">
+      <div className="container shadow my-5">
         <div className="row">
           <div className="col-md-5 d-flex flex-column align-items-center text-white justify-content-center form p-5 ">
             <h1 className="display-4 fw-bolder">Welcome Back</h1>
@@ -62,7 +63,6 @@ const Login = () => {
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
                   name="email"
                   onChange={handleInput}
                   value={user.email}

@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 const Logout = () => {
   const history = useHistory();
 
-  const logout = async () => {
+  const logoutHandler = async () => {
     try {
-      const res = fetch("/logout", {
+      const res = await fetch("/logout", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -19,6 +19,7 @@ const Logout = () => {
         alert("please logout later");
       } else {
         history.push("/");
+        window.location.reload();
         alert("logout successfully");
       }
     } catch (error) {
@@ -27,7 +28,7 @@ const Logout = () => {
   };
 
   useEffect(() => {
-    logout();
+    logoutHandler();
   }, []);
 
   return <div></div>;
