@@ -2,7 +2,6 @@
   "name": "mernwebapplication",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -20,8 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "https://gentle-escarpment-01903.herokuapp.com/"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
