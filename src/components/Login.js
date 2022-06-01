@@ -30,8 +30,10 @@ const Login = () => {
         alert("login failed");
       } else {
         alert("login successfully");
-        window.location.reload();
+
         history.push("/dashboard");
+
+        window.location.reload();
       }
     } catch (error) {
       console.log(error);
