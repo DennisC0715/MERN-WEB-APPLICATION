@@ -15,27 +15,27 @@ export default function Footer() {
                 <h5>Section</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-white">
+                    <a href="/" className="nav-link p-0 text-white">
                       Home
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-white">
+                    <a href className="nav-link p-0 text-white">
                       Features
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-white">
+                    <a href className="nav-link p-0 text-white">
                       Pricing
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-white">
+                    <a href className="nav-link p-0 text-white">
                       FAQs
                     </a>
                   </li>
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-white">
+                    <a href="/about" className="nav-link p-0 text-white">
                       About
                     </a>
                   </li>
@@ -99,21 +99,21 @@ export default function Footer() {
               <p>&copy; 2021 Company, Inc. All rights reserved.</p>
               <ul className="list-unstyled d-flex">
                 <li className="ms-3">
-                  <a className="link-dark" href="#">
+                  <a className="link-dark" href>
                     <svg className="bi" width="24" height="24">
                       <use href="#twitter" />
                     </svg>
                   </a>
                 </li>
                 <li className="ms-3">
-                  <a className="link-dark" href="#">
+                  <a className="link-dark" href>
                     <svg className="bi" width="24" height="24">
                       <use href="#instagram" />
                     </svg>
                   </a>
                 </li>
                 <li className="ms-3">
-                  <a className="link-dark" href="#">
+                  <a className="link-dark" href>
                     <svg className="bi" width="24" height="24">
                       <use href="#facebook" />
                     </svg>
