@@ -15,23 +15,24 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = user;
-    const url = "https://gentle-escarpment-01903.herokuapp.com/login";
+
     try {
-      const res = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          password,
-        }),
-      });
+      const res = await fetch(
+        "https://gentle-escarpment-01903.herokuapp.com//login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email,
+            password,
+          }),
+        }
+      );
 
       if (res.status === 400 || !res) {
         alert("login failed");
       } else {
         alert("login successfully");
-
-        history.push("/dashboard");
 
         window.location.reload();
       }
